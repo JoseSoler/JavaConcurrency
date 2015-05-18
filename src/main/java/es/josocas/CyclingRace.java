@@ -27,15 +27,15 @@ public class CyclingRace {
 
         Thread contador = new Thread(giroItalia);
         Thread aru = new Thread(giroItalia);
-        Thread porte = new Thread(giroItalia);
+        Thread uran = new Thread(giroItalia);
 
         contador.setName("Alberto Contador");
         aru.setName("Fabio Aru");
-        porte.setName("Richie Porte");
+        uran.setName("Rigoberto Uran");
 
         contador.start();
         aru.start();
-        porte.start();
+        uran.start();
 
     }
 }

@@ -23,7 +23,7 @@ public class ConcurrentSender {
         Thread t1 = new Thread(sendingWork);
         t1.run();
 
-        //Doing very important stuff cannot wait meanwhile...
+        //Doing very important stuff meanwhile, cannot wait for something else...
 
         //Now let's check if the worker has finished
         while (t1.getState() != Thread.State.TERMINATED){
